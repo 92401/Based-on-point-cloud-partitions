@@ -68,3 +68,36 @@ You can adjust this value according to your GPU’s VRAM capacity.
 > 💡 **Tip:** If you encounter memory overflow issues, try lowering `threshold_value` accordingly.
 
 ---
+---
+
+## 📸 Example Output
+
+Before running the script, please ensure that your input directory follows the structure below:
+
+your_sfm/
+├── images
+├── sparse
+
+After successful execution of the partitioning script, the following folder will be generated:
+your_sfm/model/
+└── split_result/
+└── visible/ # Stores the visualization results for each partition
+
+Each subfolder under `visible/` represents **one independent 3DGS input dataset**,  
+and the corresponding `.pkl` files record the **partitioning information** for each region.
+
+---
+
+### 🖼️ Visualization Example
+
+Below are sample visualizations of the partitioning results:
+
+<p align="center">
+  <img src="./assets/partition_result_1.png" alt="Partition Result Example" width="600">
+</p>
+
+> **Figure:** Visualization of the generated partitions under `model/split_result/visible/`.  
+> Each folder corresponds to a distinct region of the point cloud that can be processed independently in 3DGS reconstruction.
+
+---
+
