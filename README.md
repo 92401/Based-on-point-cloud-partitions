@@ -104,7 +104,7 @@ and the corresponding `.pkl` files record the **partitioning information** for e
 
 Batch Training and Merging
 
-You can batch train all partitioned sub-blocks using the following command1:
+You can batch train all partitioned sub-blocks using the following command:
 
 ```bash
 python auto_train.py --base_path E:\model\partition_point_cloud\visible
