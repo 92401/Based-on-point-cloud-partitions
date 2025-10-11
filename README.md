@@ -102,7 +102,7 @@ your_sfm/model/
 Each subfolder under `visible/` represents **one independent 3DGS input dataset**,  
 and the corresponding `.pkl` files record the **partitioning information** for each region.
 
-】## 🚀 Batch Training and Merging
+Batch Training and Merging
 
 You can batch train all partitioned sub-blocks using the following command1:
 
