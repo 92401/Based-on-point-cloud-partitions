@@ -35,4 +35,36 @@ conda env create --file environment.yml
 conda activate ptgs
 
 cd Based-on-point-cloud-partitions/scene/ptgs
+$env:PYTHONPATH="your_path/Based-on-point-cloud-partitions" 
+#Set the code as an environment variable for easy access
 python shen_partition_utils.py your_sfm_path
+
+
+---
+
+## 📝 Notes
+
+Here are some important tips to keep in mind when running the code:
+
+### 1. Partition Strategy
+- By default, the partitioning is performed **along the XY-plane**.
+- The **Manhattan rotation matrix** is **not applied** by default.  
+  If you want to enable it, simply **uncomment the `man_trans` section** in `shen_partition_utils.py`.
+- For details on determining the **Manhattan parameters**, please refer to the following repository:  
+  🔗 [VastGaussian-refactor](https://github.com/1799967694/VastGaussian-refactor)
+
+---
+
+### 2. Threshold Parameter (`threshold_value`)
+The parameter `threshold_value = 500000` is related to the **available GPU memory** during training.  
+You can adjust this value according to your GPU’s VRAM capacity.
+
+| GPU Memory | Recommended `threshold_value` |
+|-------------|-------------------------------|
+| 24 GB       | 500,000                       |
+| 12 GB       | 200,000                       |
+| 8 GB        | 100,000                       |
+
+> 💡 **Tip:** If you encounter memory overflow issues, try lowering `threshold_value` accordingly.
+
+---
