@@ -86,17 +86,15 @@ your_sfm/model/
 Each subfolder under `visible/` represents **one independent 3DGS input dataset**,  
 and the corresponding `.pkl` files record the **partitioning information** for each region.
 
----
-
 ### 🖼️ Visualization Example
 
 Below are sample visualizations of the partitioning results:
 
-![Partition Result Example](./assets/partition_result_1.png)
-
+<p align="center">
+  <img src="./assets/partition_result_1.png" alt="Partition Result Example" width="600">
+</p>
 
 > **Figure:** Visualization of the generated partitions under `model/split_result/visible/`.  
-> Each folder corresponds to a distinct region of the point cloud that can be processed independently in 3DGS reconstruction.
+> Each folder corresponds to a distinct region of the point cloud that can be processed independently.
 
----
 
