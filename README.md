@@ -92,9 +92,8 @@ and the corresponding `.pkl` files record the **partitioning information** for e
 
 Below are sample visualizations of the partitioning results:
 
-<p align="center">
-  <img src="./assets/partition_result_1.png" alt="Partition Result Example" width="600">
-</p>
+![Partition Result Example](./assets/partition_result_1.png)
+
 
 > **Figure:** Visualization of the generated partitions under `model/split_result/visible/`.  
 > Each folder corresponds to a distinct region of the point cloud that can be processed independently in 3DGS reconstruction.
