@@ -22,68 +22,105 @@ Clone this repository (including submodules):
 ```bash
 # SSH
 git clone --recursive https://github.com/1799967694/Based-on-point-cloud-partitions.git
-⚙️ Setup
-🪟 For Windows users
+```
+
+---
+
+## ⚙️ Setup
+
+### 🪟 For Windows users
+
 Before installing dependencies, set the following environment variable:
 
-bash
-复制代码
+```bash
 SET DISTUTILS_USE_SDK=1
-🧰 Create and activate the conda environment
-bash
-复制代码
+```
+
+### 🧰 Create and activate the conda environment
+
+```bash
 conda env create --file environment.yml
 conda activate ptgs
-▶️ Run the script
-bash
-复制代码
+```
+
+### ▶️ Run the script
+
+```bash
 cd Based-on-point-cloud-partitions/scene/ptgs
 $env:PYTHONPATH="your_path/Based-on-point-cloud-partitions"
 # Set the code as an environment variable for easy access
 python shen_partition_utils.py your_sfm_path
-📝 Notes
+```
+
+---
+
+## 📝 Notes
+
 Here are some important tips to keep in mind when running the code:
 
-1. Partition Strategy
-By default, the partitioning is performed along the XY-plane.
+### 1. Partition Strategy
+- By default, the partitioning is performed **along the XY-plane**.
+- The **Manhattan rotation matrix** is **not applied** by default.  
+  If you want to enable it, simply **uncomment the `man_trans` section** in `shen_partition_utils.py`.
+- For details on determining the **Manhattan parameters**, please refer to the following repository:  
+  🔗 [VastGaussian-refactor](https://github.com/1799967694/VastGaussian-refactor)
 
-The Manhattan rotation matrix is not applied by default.
-If you want to enable it, simply uncomment the man_trans section in shen_partition_utils.py.
+---
 
-For details on determining the Manhattan parameters, please refer to the following repository:
-🔗 VastGaussian-refactor
-
-2. Threshold Parameter (threshold_value)
-The parameter threshold_value = 500000 is related to the available GPU memory during training.
+### 2. Threshold Parameter (`threshold_value`)
+The parameter `threshold_value = 500000` is related to the **available GPU memory** during training.  
 You can adjust this value according to your GPU’s VRAM capacity.
 
-GPU Memory	Recommended threshold_value
-24 GB	500,000
-12 GB	200,000
-8 GB	100,000
+| GPU Memory | Recommended `threshold_value` |
+|-------------|-------------------------------|
+| 24 GB       | 500,000                       |
+| 12 GB       | 200,000                       |
+| 8 GB        | 100,000                       |
 
-💡 Tip: If you encounter memory overflow issues, try lowering threshold_value accordingly.
+> 💡 **Tip:** If you encounter memory overflow issues, try lowering `threshold_value` accordingly.
 
-📸 Example Output
+---
+
+## 📸 Example Output
+
 Before running the script, please ensure that your input directory follows the structure below:
 
-复制代码
+```
 your_sfm/
 ├── images
 ├── sparse
+```
+
 After successful execution of the partitioning script, the following folder will be generated:
 
-bash
-复制代码
+```
 your_sfm/model/
 └── split_result/
     └── visible/        # Stores the visualization results for each partition
-Each subfolder under visible/ represents one independent 3DGS input dataset,
-and the corresponding .pkl files record the partitioning information for each region.
+```
 
-🖼️ Visualization Example
+Each subfolder under `visible/` represents **one independent 3DGS input dataset**,  
+and the corresponding `.pkl` files record the **partitioning information** for each region.
+
+---
+
+### 🖼️ Visualization Example
+
 Below are sample visualizations of the partitioning results:
 
-<p align="center"> <img src="./assets/partition_result_1.png" alt="Partition Result Example" width="600"> </p>
-Figure: Visualization of the generated partitions under model/split_result/visible/.
-Each folder corresponds to a distinct region of the point cloud that can be processed independently.
+<p align="center">
+  <img src="./assets/partition_result_1.png" alt="Partition Result Example" width="600">
+</p>
+
+> **Figure:** Visualization of the generated partitions under `model/split_result/visible/`.  
+> Each folder corresponds to a distinct region of the point cloud that can be processed independently.
+
+---
+
+## 🧾 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+⭐ **If you find this project useful, please consider giving it a star!**
