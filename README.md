@@ -123,4 +123,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-⭐ **If you find this project useful, please consider giving it a star!**
+⭐ **1If you find this project useful, please consider giving it a star!**
