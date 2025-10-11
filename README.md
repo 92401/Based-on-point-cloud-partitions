@@ -102,6 +102,14 @@ your_sfm/model/
 Each subfolder under `visible/` represents **one independent 3DGS input dataset**,  
 and the corresponding `.pkl` files record the **partitioning information** for each region.
 
+】## 🚀 Batch Training and Merging
+
+You can batch train all partitioned sub-blocks using the following command:
+
+```bash
+python auto_train.py --base_path E:\model\partition_point_cloud\visible
+
+```
 ---
 
 ### 🖼️ Visualization Example
@@ -123,4 +131,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-⭐ **1If you find this project useful, please consider giving it a star!**
+
