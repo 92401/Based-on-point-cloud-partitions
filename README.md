@@ -12,14 +12,15 @@
 
 This project provides a strategy to **partition point cloud data** after sparse reconstruction.  
 It is primarily intended for use in **3D Gaussian Splatting (3DGS)** reconstruction pipelines, enabling efficient division and management of large-scale 3D data.
+<p align="center">
+  <img src="./assets/ych_render.png" alt="Partition Result Example" width="600">
+</p>
+
 
 <p align="center">
   <img src="./assets/render1.png" alt="Partition Result Example" width="600">
 </p>
 
-<p align="center">
-  <img src="./assets/ych_render.png" alt="Partition Result Example" width="600">
-</p>
 
 ---
 
