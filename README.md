@@ -21,9 +21,9 @@ It is primarily intended for use in **3D Gaussian Splatting (3DGS)** reconstruct
   <img src="./assets/render02.png" alt="Partition Result Example" width="600">
 </p>
 
-### 🎬 项目演示视频
-
-[点击这里观看或下载视频](https://github.com/92401/Based-on-point-cloud-partitions/tree/main/assets/demo.mp4)
+### 🎬 训练结果演示视频
+![](./assets/demo.gif)
+[点击这里下载视频](https://github.com/92401/Based-on-point-cloud-partitions/tree/main/assets/demo.mp4)
 
 ---
 
