@@ -17,9 +17,10 @@ It is primarily intended for use in **3D Gaussian Splatting (3DGS)** reconstruct
 </p>
 
 <p align="center">
-  <img src="./assets/render02.png" alt="Partition Result Example 2" 
+  <img src="./assets/render02.png" alt="Partition Result Example 2" >
 </p>
 ---
+
 ### 🎬 Training Result Demo
 
 <p align="center">
