@@ -13,17 +13,23 @@
 This project provides a strategy to **partition point cloud data** after sparse reconstruction.  
 It is primarily intended for use in **3D Gaussian Splatting (3DGS)** reconstruction pipelines, enabling efficient division and management of large-scale 3D data.
 <p align="center">
-  <img src="./assets/render01.png" alt="Partition Result Example" width="600">
+  <img src="./assets/render01.png" alt="Partition Result Example 1" width="95%">
 </p>
-
 
 <p align="center">
-  <img src="./assets/render02.png" alt="Partition Result Example" width="600">
+  <img src="./assets/render02.png" alt="Partition Result Example 2" width="95%">
+</p>
+### 🎬 Training Result Demo
+
+<p align="center">
+  <img src="./assets/demo.gif" alt="Training Demo" width="90%">
 </p>
 
-### 🎬 训练结果演示视频
-![](./assets/demo.gif)
-[点击这里下载视频](https://github.com/92401/Based-on-point-cloud-partitions/tree/main/assets/demo.mp4)
+<p align="center">
+  <a href="https://github.com/92401/Based-on-point-cloud-partitions/raw/main/assets/demo.mp4">
+    🔗 点击这里下载高清视频（MP4）
+  </a>
+</p>
 
 ---
 
